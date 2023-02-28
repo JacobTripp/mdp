@@ -2,9 +2,15 @@
 
 Local preview of markdown files
 
-## Features
-* not much
-* use at your own risk
+## How to use
+```
+Usage of mdp:
+  -file string
+    	Markdown file to preview
+  -s	Skip auto-preview
+  -t string
+    	Alternate template name
+```
 
 ## How to install:
 ```bash
