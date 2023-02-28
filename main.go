@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/russross/blackfriday/v2"
+	"github.com/shurcooL/github_flavored_markdown"
 )
 
 const (
@@ -83,7 +83,7 @@ func run(filename, tFname string, out io.Writer, skipPreview bool) error {
 }
 
 func parseContent(input []byte, tFname string) ([]byte, error) {
-	output := blackfriday.Run(input)
+	output := github_flavored_markdown.Markdown(input)
 	body := bluemonday.UGCPolicy().SanitizeBytes(output)
 
 	t, err := template.New("mdp").Parse(defaultTemplate)
