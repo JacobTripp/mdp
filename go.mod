@@ -1,4 +1,4 @@
-module github.com/JacobTripp/mpd
+module github.com/JacobTripp/mdp
 
 go 1.20
 

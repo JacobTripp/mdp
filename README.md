@@ -8,5 +8,5 @@ Local preview of markdown files
 
 ## How to install:
 ```bash
-go install github.com/JacobTripp/mdp
+go install github.com/JacobTripp/mdp@latest
 ```
